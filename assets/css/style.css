@@ -1,0 +1,59 @@
+@import url(./contents/parte1.css);
+@import url(./contents/parte2.css);
+@import url(./contents/parte3.css);
+@import url(./contents/parte4.css);
+@import url(./contents/parte5.css);
+@import url(./contents/parte6.css);
+@import url(./contents/parte7.css);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-titulo: 'Passions Conflict', cursive;
+    --fonte-subtitulo: 'Shadows Into Light', cursive;
+    --fonte-texto: 'Caramel', cursive;
+
+    --background: rgb(3, 3, 3);
+    
+    --branco: white;
+    --branco-acizentado: rgb(201, 201, 201);
+    --cinza: gray;
+    --vermelho-vinho: darkred;
+    --vermelho-sangue: rgb(170, 0, 0);
+    --vermelho: red;
+    --gold: rgb(180, 153, 0);
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-texto);
+    background-color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* BACKGROUND IMAGENS + SOMBRA */
+
+.imagens__fundo {
+    width: 100%;
+    max-width: screen;
+    position: relative;
+    z-index: -2;
+}
+
+.sombra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 20px 20px black;
+}
+
+@media screen and (min-width: 2560px) {
+    body { 
+        margin: 0 550px;
+    }
+}
